@@ -95,7 +95,7 @@ disable404 = false
         [[params.certifications.list]]
         level = "Associate project manager"
         description = "CAPM - PMI"
-        dates = "Feb 2020"
+        dates = "Jan 2020"
 
         [[params.certifications.list]]
         level = "TOEIC 930"
@@ -170,7 +170,7 @@ disable404 = false
         position = "DevOps Engineer"
         dates = "6 mos, 2019"
         company = "Viseo - Cebu, Philippines"
-        details = "- Viseo - Cebu, Philippines\n- Build a Proof of Concept: How to manage cloud projects for thousands of users\n\nCompetency acquired: Source of proposals. Work on different timelines. Cultural intelligence"
+        details = "- Propose and design a solution to automate Viseo's iOS & Android deployments\n- Build a Proof of Concept: How to manage cloud projects for thousands of users\n\nCompetency acquired: Source of proposals. Work on different timelines. Cultural intelligence"
 
         [[params.jobs.list]]
         position = "Full Stack Web Developer"
@@ -225,11 +225,11 @@ disable404 = false
         [[params.others.list]]
         title = "Summer courses - Slovenia"
         url = "https://www.best.eu.org/index.jsp"
-        tagline = "- Board of European Students of Technology\n- LEDs & Light\n- Live and work with people coming from all Europe\n- 2 wks, 2017"
+        tagline = "- Board of European Students of Technology\n- Live and work with people coming from all Europe\n- 2017"
 
         [[params.others.list]]
         title = "Symbioz - Dormitory association"
-        tagline = "- Help for events organization\n- Multiple nationalities customer relationship\n- 7 mos, 2015 - 2016"
+        tagline = "- Help for events organization\n- Multiple nationalities customer relationship\n- 2015 - 2016"
 
     # Skills section
     [params.skills]
@@ -291,7 +291,8 @@ disable404 = false
     # As for Hugo port you may rewrite the "Ported for..." line with setting your name below.
 
     [params.footer]
-        copyright = ""
+        copyright = "Yohan Gouzerh"
+        technos = "Built using Hugo. Deployed using Azure Pipelines on Azure Blob Storage"
 
 [deployment]
 # By default, files are uploaded in an arbitrary order.
