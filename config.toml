@@ -1,0 +1,294 @@
+# Page settings
+
+baseurl = "http://example.org/"
+languageCode = "en-us"
+title = "Resume Yohan GOUZERH"
+theme = "hugo-orbit-theme"
+googleAnalytics = "UA-XXXXXXX-Y"
+
+# Do not build files for websites. Need them? Set to false
+disableRSS = true
+disableSitemap = true
+disable404 = false
+
+[params]
+
+# Meta
+    description = "Yohan GOUZERH Resume"
+    author = "Yohan GOUZERH"
+
+# Theme styles
+
+    # The original template comes with 6 colour schemes. You may choose styles below.
+    # "styles.css", "styles-2.css", "styles-3.css", "styles-4.css", "styles-5.css", "styles-6.css"
+    # are available. Also the source LESS files are included so
+    # it’s quick and easy to change the styling and colour scheme.
+
+    styles = "styles-3.css"
+
+# Sidebar sections
+
+    # Profile section
+    [params.profile]
+        name = "Yohan GOUZERH"
+        tagline = "DevOps Engineer"
+        avatar = "profile.png"
+
+    # Contact section
+    [params.contact]
+        enable = true
+
+        # [[params.contact.list]]
+        # class = "email"
+        # icon = "fa-envelope"
+        # url = "mailto: yohan.gouzerh@outlook.com"
+        # title = "yohan.gouzerh@outlook.com"
+
+        [[params.contact.list]]
+        class = "website"
+        icon = "fa-globe"
+        url = "https://yohan.gouzerh.com"
+        title = "yohan.gouzerh.com"
+
+        [[params.contact.list]]
+        class = "linkedin"
+        icon = "fa-linkedin"
+        url = "https://www.linkedin.com/in/yohan-gouzerh/"
+        title = "linkedin.com/in/yohan-gouzerh"
+
+        [[params.contact.list]]
+        class = "github"
+        icon = "fa-github"
+        url = "//github.com/ygouzerh"
+        title = "github.com/ygouzerh"
+
+    # Education section
+    [params.education]
+        enable = true
+        title = "Education"
+
+        [[params.education.list]]
+        level = "Master of Management"
+        name = "Corporate Management"
+        college = "Grenoble IAE"
+        grade = ""
+        dates = "2019 - 2020"
+
+        [[params.education.list]]
+        level = "Engineer's degre" 
+        name = "Computer Science & Applied Mathematics, Option Information Systems"
+        college = "Ensimag, Grenoble INP"
+        grade = "Magna Cum Laude"
+        dates = "2016 - 2019"
+
+        [[params.education.list]]
+        level = "DUT (2-year degree)"
+        name = "Computer Systems Networking and Telecommunications"
+        college = "University Grenoble Alpes - IUT 1 Joseph Fourier"
+        grade = "Top of his year"
+        dates = "2014 - 2016"
+
+    [params.certifications]
+        enable = true
+        title = "Certifications"
+
+        [[params.certifications.list]]
+        level = "Associate project manager"
+        description = "CAPM - PMI"
+        dates = "Feb 2020"
+
+        [[params.certifications.list]]
+        level = "TOEIC 930"
+        description = "Listening 490, Reading 440"
+        dates = "2017"
+
+    # Languages section
+    [params.language]
+        enable = true
+        title = "Languages"
+
+        [[params.language.list]]
+        language = "English"
+        level = "Full professional proficiency, TOEIC 930"
+
+        [[params.language.list]]
+        language = "French"
+        level = "Native"
+
+        [[params.language.list]]
+        language = "German"
+        level = "Limited working proficiency"
+
+        [[params.language.list]]
+        language = "Chinese - Traditional, Mandarin"
+        level = "Early Beginner"
+
+    # Interests section
+    [params.interests]
+        enable = true
+        title = "Interests"
+
+        [[params.interests.list]]
+        interest = "Scuba diving"
+
+        [[params.interests.list]]
+        interest = "Tennis"
+
+        [[params.interests.list]]
+        interest = "Guitar"
+
+        [[params.interests.list]]
+        interest = "Swimming"
+
+        [[params.interests.list]]
+        interest = "Skiing"
+
+# Main body sections
+
+    # You may use markdown in summary, details and intro fields. But don't overdose, it's resume!:)
+
+    # Summary section
+    [params.summary]
+        enable = true
+        icon = "fa-user"
+        title = "Career Profile"
+        summary = "Cross-functional profile, passionate about IT, with skills in business administration and project management. Used to work in a multicultural environment, either in autonomy or in team. Attentive to keep in mind client satisfaction and respect of others."
+
+    # Experiences section
+    [params.experiences]
+        enable = true
+        icon = "fa-briefcase"
+        title = "Experiences"
+
+        [[params.jobs.list]]
+        position = "DevOps Engineer - Freelance"
+        dates = "6 mos, 2019 - 2020"
+        company = "Nsigma, La Gazette du Laboratoire - Remote"
+        details = "- Architect and implement a search engine to find laboratory equipment suppliers\n - Architect and implement a solution to monitor the business KPI\n- Delivered a state-of-the art analysis, documentation and tutorials\n\nCompetency acquired: Client advising. Time management"
+
+        [[params.jobs.list]]
+        position = "DevOps Engineer"
+        dates = "6 mos, 2019"
+        company = "Viseo - Cebu, Philippines"
+        details = "- Viseo - Cebu, Philippines\n- Build a Proof of Concept: How to manage cloud projects for thousands of users\n\nCompetency acquired: Source of proposals. Work on different timelines. Cultural intelligence"
+
+        [[params.jobs.list]]
+        position = "Full Stack Web Developer"
+        dates = "3.5 mos - 2018"
+        company = "Capgemini, Sogeti - Montbonnot, France"
+        details = "- Part of the Capgemini France's Center of Excellence DevOps\n- Improve a solution used by CAC 40 companies, to manage campaigns of several thousand tests\n- Gain between 10 and 85% speed on all pages, 23% average speed increase. Add new features\n\nCompetency acquired: Strong methodology. Quality and rigorous mindset"
+
+        [[params.jobs.list]]
+        position = "Full Stack Web Developer"
+        dates = "2.5 mos - 2016"
+        company = "Winoa - Le Cheylas, France"
+        details = "- Improve the Decision Support System and maintain the Supervisory Control and Data Acquisition System\n- Respond quickly to emergencies, in a highly critical industrial environment\n\nCompetency acquired: Total autonomy. Emergency handling"
+
+    # Projects section
+    [params.projects]
+        enable = true
+        icon = "fa-archive"
+        title = "Projects"
+        intro = ""
+
+        [[params.projects.list]]
+        title = "Winner of Grenoble's Entrepreneur Trade Show 2020"
+        url = "http://www.sur-ordo.fr.nf/"
+        tagline = "Sur'Ordo : Secure medical prescriptions against fraud\n- Against 23 other companies\n- 2 pharmacists, 3 engineers, 2019 - 2020"
+
+        [[params.projects.list]]
+        title = "Management simulation"
+        tagline = "Simulate 2 years of decision making\n- Create accounting, financial and HR forecasting tools\n- 5 pers, 2020"
+
+        [[params.projects.list]]
+        title = "Distributed IoT farm"
+        url = "https://fablab.ensimag.fr/index.php?title=Pilbifarmer"
+        tagline = "Scalable solution for large farming automation\n- 5 pers, 2019"
+
+        [[params.projects.list]]
+        title = "Distributed & resilient system for large-scale data analysis"
+        url = "https://github.com/ygouzerh/smack-it"
+        tagline = "Ingest and process high volume of data. 30 servers\n- 5 pers, 2018"
+
+        [[params.projects.list]]
+        title = "Compiler for an object-oriented language"
+        url = "http://ensimag.grenoble-inp.fr/fr/formation/projet-g-eacute-nie-logiciel-4mmpgl"
+        tagline = "Create a Java-like language\n- 5 pers, 2018"
+
+    # Projects section
+    [params.others]
+        enable = true
+        icon = "fa-archive"
+        title = "Additional Experiences"
+        intro = ""
+
+        [[params.others.list]]
+        title = "Summer courses - Slovenia"
+        url = "https://www.best.eu.org/index.jsp"
+        tagline = "- Board of European Students of Technology\n- LEDs & Light\n- Live and work with people coming from all Europe\n- 2 wks, 2017"
+
+        [[params.others.list]]
+        title = "Symbioz - Dormitory association"
+        tagline = "- Help for events organization\n- Multiple nationalities customer relationship\n- 7 mos, 2015 - 2016"
+
+    # Skills section
+    [params.skills]
+        enable = true
+        icon = "fa-rocket"
+        title = "Skills & Proficiency"
+
+        [[params.skills.list]]
+        skill = "CICD"
+        list = "Fastlane, Jenkins, GitlabCI"
+                
+        [[params.skills.list]]
+        skill = "Cloud"
+        list = "AWS (EC2, IAM, SSO, Fargate, Lambda), Azure (SSO, IoT Hub, Web App)"
+
+        [[params.skills.list]]
+        skill = "Orchestration"
+        list = "Docker, Kubernetes"
+
+        [[params.skills.list]]
+        skill = "Automation"
+        list = "Ansible, Terraform, Bash"
+
+        [[params.skills.list]]
+        skill = "Software engineering"
+        list = "Python, Java, Ruby, C, Git, UML"
+
+        [[params.skills.list]]
+        skill = "Web development"
+        list = "Symfony, PHP, Javascript"
+
+        [[params.skills.list]]
+        skill = "Reverse-proxy"
+        list = "Traefik, Nginx"
+
+        [[params.skills.list]]
+        skill = "Monitoring"
+        list = "Grafana, Prometheus, Kibana"
+
+        [[params.skills.list]]
+        skill = "Data analysis"
+        list = "Elasticsearch (ELK), Apache Spark"
+
+        [[params.skills.list]]
+        skill = "Data storage"
+        list = "PostgreSQL, SQL Server, MongoDB, Apache Hadoop"
+
+        [[params.skills.list]]
+        skill = "Automated testing"
+        list = "RSpec, JUnit, Unittest"
+
+    # Footer section
+
+    # The original template is released under the Creative Commons Attribution 3.0 License.
+    # Please keep the original attribution link when using for your own project.
+    # If you'd like to use the template without the attribution,
+    # you can check out other license options via template author's website: themes.3rdwavemedia.com
+    # 
+    # As for Hugo port you may rewrite the "Ported for..." line with setting your name below.
+
+    [params.footer]
+        copyright = ""
