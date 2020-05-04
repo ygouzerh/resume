@@ -24,7 +24,7 @@ You can visualize the website on [yohan.gouzerh.com](https://yohan.gouzerh.com)
 
 ## Installation
 
-This repository use a [submodule](https://github.com/ygouzerh/resume) for the theme.
+This repository use a [submodule](https://github.com/ygouzerh/hugo-orbit-theme) for the theme.
 
 In order to clone the submodule too, run : 
 
