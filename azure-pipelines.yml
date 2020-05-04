@@ -22,7 +22,8 @@ jobs:
     vmImage: 'ubuntu-latest'
   workspace:
     clean: all # what to clean up before the job runs
-  timeoutInMinutes: 5
+  # Principale timeout : the purging phase, can take up to 10 minutes
+  timeoutInMinutes: 15
   environment: production
   strategy:
     runOnce: #rolling, canary are the other strategies that are supported
