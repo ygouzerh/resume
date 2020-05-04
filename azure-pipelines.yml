@@ -1,0 +1,46 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+resources:
+  repositories:
+  - repository: self
+    checkoutOptions:
+      submodules: true
+
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+jobs:
+- deployment: 'Deploy'   # name of the deployment job (A-Z, a-z, 0-9, and underscore)
+  displayName: 'Deploy to https://yohan.gouzerh.com'
+  pool:                # see the following "Pool" schema
+    vmImage: 'ubuntu-latest'
+  workspace:
+    clean: all # what to clean up before the job runs
+  timeoutInMinutes: 5
+  environment: production
+  strategy:
+    runOnce: #rolling, canary are the other strategies that are supported
+      deploy:
+        steps:
+        - checkout: self
+
+        - script: wget https://github.com/gohugoio/hugo/releases/download/v0.69.2/hugo_0.69.2_Linux-64bit.deb
+          displayName: 'Download Hugo'
+
+        - script: sudo dpkg -i hugo_0.69.2_Linux-64bit.deb
+          displayName: 'Install Hugo'
+
+        - script: hugo
+          displayName: 'Build ./public/ folder'
+
+        - script: hugo deploy --target="deploy-on-azure"
+          displayName: 'Deploy to Azure Blob Storage'
+          env:
+            AZURE_STORAGE_ACCOUNT: $(azureStorageAccount) # right way to map to an env variable
+            AZURE_STORAGE_KEY: $(azureStorageKey)
