@@ -1,6 +1,15 @@
-# Hugo Orbit Theme
+# Yohan Gouzerh's Resume
+
 
 This is a modification of an [Hugo port](https://github.com/aerohub/hugo-orbit-theme) made by Pavel Kanyshev, of [Orbit](//github.com/xriley/Orbit-Theme) - great looking resume/CV template designed for developers by Xiaoying Riley.
+
+## Where to find the website
+
+You can visualize the website on [yohan.gouzerh.com](https://yohan.gouzerh.com)
+
+## Current Status
+
+[![Build Status](https://dev.azure.com/ygouzerh/resume/_apis/build/status/ygouzerh.resume?branchName=master&jobName=Deploy%20to%20https%3A%2F%2Fyohan.gouzerh.com)](https://dev.azure.com/ygouzerh/resume/_build/latest?definitionId=2&branchName=master)
 
 ## Contents
 
