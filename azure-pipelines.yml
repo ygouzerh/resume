@@ -44,3 +44,11 @@ jobs:
           env:
             AZURE_STORAGE_ACCOUNT: $(azureStorageAccount) # right way to map to an env variable
             AZURE_STORAGE_KEY: $(azureStorageKey)
+
+        - task: AzureCLI@2
+          inputs:
+            azureSubscription: 'Free Trial(b0ef7c7a-37af-4311-8b65-574eb7ef7291)'
+            scriptType: 'bash'
+            scriptLocation: 'inlineScript'
+            inlineScript: 'az cdn endpoint purge -n $1 --profile-name $2  --resource-group $3  --content-paths ''/'''
+            arguments: '$(endpointName) $(endpointProfile) $(endpointResourceGroup)'
